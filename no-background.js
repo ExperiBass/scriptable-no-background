@@ -11,7 +11,7 @@ Description :
   A module to create illusions of transparent
   backgrounds for Scriptable widgets
 
-Adapted from Max Zeryck's (@mzeryck) amazing 
+Adapted from Max Zeryck's (@mzeryck) amazing
 invisible widget shared on the Automtors discourse
 https://talk.automators.fm/t/widget-examples/7994/135
 
@@ -24,11 +24,11 @@ v1.8.0
   are unique per device so that each device can
   have it's own wallpaper. Run "Regenerate Slices"
   on each device.
-  But, there's a bug the current Scriptable version 
+  But, there's a bug the current Scriptable version
   where Device.name() returns the model instead.
-  So, the wallppapers actually can't be unique 
-  yet. Affects stable version 1.6.12 or beta 1.7 
-- (new) support for iPhone 14 Pro/Pro Max. 
+  So, the wallppapers actually can't be unique
+  yet. Affects stable version 1.6.12 or beta 1.7
+- (new) support for iPhone 14 Pro/Pro Max.
   Thank you @mzeryck & u/Senion-Ad-883
 v1.7.0
 - (new) support for iPhone 12 Mini. Thanks @blacksector
@@ -36,17 +36,17 @@ v1.6.0
 - (new) `transparent` and `for` alias to `getSliceForWidget`
 - (new) merged `No Background Config` code to maintain 1 code
 - (new) auto-detect iCloud usage
-v1.5.0 
+v1.5.0
 - (update) iPhone 12 Pro Max compatibility
-v1.4.0 
+v1.4.0
 - (update) also prompt for setup on the getPathForSlice method
-v1.3.0 
+v1.3.0
 - (update) automativally prompt for setup when
   slices are missing or if the widget's
   position is not yet stored.
 
 v1.2.0
-- (new) applyTint method to simulate a 
+- (new) applyTint method to simulate a
   semi-tranparent look
 v1.1.1
 - (fix) syntax error on generateSlices
@@ -101,7 +101,7 @@ exports.generateSlices = async function ({ caller = 'none' }) {
     // We'll save everything in the config, to keep things centralized
     let cfg = await loadConfig()
     if (cfg["phone-model"] === undefined) {
-      // Doesn't exist, ask them which phone they want to generate for, 
+      // Doesn't exist, ask them which phone they want to generate for,
       // the mini or the others?
       message = "What model of iPhone do you have?"
       let options = ["iPhone 12 mini", "iPhone 11 Pro, XS, or X"]
@@ -165,7 +165,7 @@ exports.generateSlices = async function ({ caller = 'none' }) {
       const imgPath = fm.joinPath(cachePath, imgName)
 
       if (fm.fileExists(imgPath)) {
-        // sometimes it wouldn't overwrite. 
+        // sometimes it wouldn't overwrite.
         // so better delete the file first
         if (USES_ICLOUD) await fm.downloadFileFromiCloud(imgPath)
         try { fm.remove(imgPath) } catch (e) { }
@@ -260,7 +260,7 @@ exports.getSliceForWidget = async function (
       readyToChoose = true
     }
 
-    // now set the 
+    // now set the
     if (readyToChoose) {
       var backgrounChosen = await exports.chooseBackgroundSlice(instance_name)
     }
@@ -373,8 +373,30 @@ const widgetPositions = {
 }
 //------------------------------------------------
 const phoneSizes = {
+  "2868": {
+      "models": ["16 Pro Max"],
+      "small": { "w": 0, "h": 0 },
+      "medium": { "w": 0, "h": 0 },
+      "large": { "w": 0, "h": 0 },
+      "left": 0,
+      "right": 0,
+      "top": 0,
+      "middle": 0,
+      "bottom": 0
+  },
+  "2622": {
+      "models": ["16 Pro"],
+      "small": { "w": 0, "h": 0 },
+      "medium": { "w": 0, "h": 0 },
+      "large": { "w": 0, "h": 0 },
+      "left": 0,
+      "right": 0,
+      "top": 0,
+      "middle": 0,
+      "bottom": 0
+  },
   "2796": {
-    "models": ["14 Pro Max"],
+    "models": ["14 Pro Max", "15 Pro Max", "16 Plus"],
     "small": { "w": 510, "h": 510 },
     "medium": { "w": 1092, "h": 510 },
     "large": { "w": 1092, "h": 1146 },
@@ -386,7 +408,7 @@ const phoneSizes = {
   },
 
   "2556": {
-    "models": ["14 Pro"],
+    "models": ["14 Pro", "15 Pro", "16"],
     "small": { "w": 474, "h": 474 },
     "medium": { "w": 1014, "h": 474 },
     "large": { "w": 1014, "h": 1062 },
@@ -557,4 +579,4 @@ if (module_name == Script.name()) {
     }
   })()
 
-} 
+}
