@@ -400,11 +400,11 @@ const phoneSizes = {
     "small": { "w": 510, "h": 510 },
     "medium": { "w": 1092, "h": 510 },
     "large": { "w": 1092, "h": 1146 },
-    "left": 99,
-    "right": 681,
-    "top": 282,
-    "middle": 918,
-    "bottom": 1554
+    "left": 0,
+    "right": 0,
+    "top": 0,
+    "middle": 0,
+    "bottom": 0
   },
 
   "2556": {
@@ -412,11 +412,11 @@ const phoneSizes = {
     "small": { "w": 474, "h": 474 },
     "medium": { "w": 1014, "h": 474 },
     "large": { "w": 1014, "h": 1062 },
-    "left": 82,
-    "right": 622,
-    "top": 270,
-    "middle": 858,
-    "bottom": 1446
+    "left": 81,
+    "right": 624,
+    "top": 240,
+    "middle": 828,
+    "bottom": 1416
   },
 
   "2778": {
@@ -424,11 +424,11 @@ const phoneSizes = {
     "small": { "w": 510, "h": 510 },
     "medium": { "w": 1092, "h": 510 },
     "large": { "w": 1092, "h": 1146 },
-    "left": 96,
-    "right": 678,
-    "top": 246,
-    "middle": 882,
-    "bottom": 1518
+    "left": 0,
+    "right": 0,
+    "top": 0,
+    "middle": 0,
+    "bottom": 0
   },
 
   "2532": {
@@ -436,11 +436,11 @@ const phoneSizes = {
     "small": { "w": 474, "h": 474 },
     "medium": { "w": 1014, "h": 474 },
     "large": { "w": 1014, "h": 1062 },
-    "left": 78,
-    "right": 618,
-    "top": 231,
-    "middle": 819,
-    "bottom": 1407
+    "left": 0,
+    "right": 0,
+    "top": 0,
+    "middle": 0,
+    "bottom": 0
   },
 
   "2688": {
@@ -448,11 +448,11 @@ const phoneSizes = {
     "small": { "w": 507, "h": 507 },
     "medium": { "w": 1080, "h": 507 },
     "large": { "w": 1080, "h": 1137 },
-    "left": 81,
-    "right": 654,
-    "top": 228,
-    "middle": 858,
-    "bottom": 1488
+    "left": 0,
+    "right": 0,
+    "top": 0,
+    "middle": 0,
+    "bottom": 0
   },
 
   "1792": {
@@ -460,11 +460,11 @@ const phoneSizes = {
     "small": { "w": 338, "h": 338 },
     "medium": { "w": 720, "h": 338 },
     "large": { "w": 720, "h": 758 },
-    "left": 54,
-    "right": 436,
-    "top": 160,
-    "middle": 580,
-    "bottom": 1000
+    "left": 0,
+    "right": 0,
+    "top": 0,
+    "middle": 0,
+    "bottom": 0
   },
 
   "2436": {
@@ -472,11 +472,11 @@ const phoneSizes = {
     "small": { "w": 465, "h": 465 },
     "medium": { "w": 987, "h": 465 },
     "large": { "w": 987, "h": 1035 },
-    "left": 69,
-    "right": 591,
-    "top": 213,
-    "middle": 783,
-    "bottom": 1353
+    "left": 0,
+    "right": 0,
+    "top": 0,
+    "middle": 0,
+    "bottom": 0
   },
 
   "2436_mini": {
@@ -484,11 +484,11 @@ const phoneSizes = {
     "small": { "w": 465, "h": 465 },
     "medium": { "w": 987, "h": 465 },
     "large": { "w": 987, "h": 1035 },
-    "left": 69,
-    "right": 591,
-    "top": 231,
-    "middle": 801,
-    "bottom": 1371
+    "left": 0,
+    "right": 0,
+    "top": 0,
+    "middle": 0,
+    "bottom": 0
   },
 
   "2208": {
@@ -496,11 +496,11 @@ const phoneSizes = {
     "small": { "w": 471, "h": 471 },
     "medium": { "w": 1044, "h": 471 },
     "large": { "w": 1044, "h": 1071 },
-    "left": 99,
-    "right": 672,
-    "top": 114,
-    "middle": 696,
-    "bottom": 1278
+    "left": 0,
+    "right": 0,
+    "top": 0,
+    "middle": 0,
+    "bottom": 0
   },
 
   "1334": {
@@ -508,11 +508,11 @@ const phoneSizes = {
     "small": { "w": 296, "h": 296 },
     "medium": { "w": 642, "h": 296 },
     "large": { "w": 642, "h": 648 },
-    "left": 54,
-    "right": 400,
-    "top": 60,
-    "middle": 412,
-    "bottom": 764
+    "left": 0,
+    "right": 0,
+    "top": 0,
+    "middle": 0,
+    "bottom": 0
   },
 
   "1136": {
@@ -520,11 +520,11 @@ const phoneSizes = {
     "small": { "w": 282, "h": 282 },
     "medium": { "w": 584, "h": 282 },
     "large": { "w": 584, "h": 622 },
-    "left": 30,
-    "right": 332,
-    "top": 59,
-    "middle": 399,
-    "bottom": 399
+    "left": 0,
+    "right": 0,
+    "top": 0,
+    "middle": 0,
+    "bottom": 0
   }
 }
 //------------------------------------------------
