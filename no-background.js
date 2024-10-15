@@ -396,7 +396,7 @@ const phoneSizes = {
       "bottom": 0
   },
   "2796": {
-    "models": ["14 Pro Max", "15 Pro Max", "16 Plus"],
+    "models": ["14 Pro Max", "15 Pro Max", "15 Plus", "16 Plus"],
     "small": { "w": 510, "h": 510 },
     "medium": { "w": 1092, "h": 510 },
     "large": { "w": 1092, "h": 1146 },
@@ -408,7 +408,7 @@ const phoneSizes = {
   },
 
   "2556": {
-    "models": ["14 Pro", "15 Pro", "16"],
+    "models": ["14 Pro", "15 Pro", "15", "16"],
     "small": { "w": 474, "h": 474 },
     "medium": { "w": 1014, "h": 474 },
     "large": { "w": 1014, "h": 1062 },
