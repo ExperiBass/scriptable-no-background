@@ -1,3 +1,10 @@
+# no-background.js (ios 18+)
+
+if youre on ios 17 the original works fine
+this fork drops pre-18 support to make it easier to update
+
+original readme below
+
 # no-background.js
 
 A module to emulate transparent backgrounds for Scriptable.app widgets.
@@ -9,7 +16,7 @@ A module to emulate transparent backgrounds for Scriptable.app widgets.
 * Store/reset widget positions
 * Option for semi-transparent style
 
---- 
+---
 
 ## The 3-Step Setup
 
@@ -22,13 +29,13 @@ A module to emulate transparent backgrounds for Scriptable.app widgets.
     const widget = new ListWidget()
     widget.backgroundImage = await transparent(Script.name())
 
-    // the rest of your widget code 
+    // the rest of your widget code
     ```
 3. Run your widget!
 
 *The `transparent` is an alias for the original `getSliceForWidget` method. You can use them interchangably.*
 
---- 
+---
 
 ## More Options
 
@@ -36,7 +43,7 @@ A module to emulate transparent backgrounds for Scriptable.app widgets.
 
 ### Update the background after you moved your widget's position
 
-The `transparent` method has an optional second boolean argument to prompt for a new widget position. This is useful when you changed the position of the widget on your home screen. 
+The `transparent` method has an optional second boolean argument to prompt for a new widget position. This is useful when you changed the position of the widget on your home screen.
 
 ```javascript
 const RESET_BACKGROUND = true
@@ -46,7 +53,7 @@ const { transparent } = importModule('no-background')
 const widget = new ListWidget()
 widget.backgroundImage = await transparent(Script.name(), RESET_BACKGROUND)
 
-// the rest of your widget code 
+// the rest of your widget code
 ```
 
 *Tip: Change `const RESET_BACKGROUND = true` to `const RESET_BACKGROUND = !config.runsInWidget` to automatcally prompt for a new position every time you run the script inside the app*
@@ -55,7 +62,7 @@ widget.backgroundImage = await transparent(Script.name(), RESET_BACKGROUND)
 
 ### Changing Your Wallpaper
 
-  
+
 Now, you may want update the backgrounds after you change your wallpaper. For that, run the no-bacground module by itself.
 
 You will be presented with 2 options, `Generate Slices` and `Clear Widget Positions Cache`.
@@ -77,7 +84,7 @@ const nobg = importModule('no-background')
 const widget = new ListWidget()
 widget.backgroundImage = await nobg.getSlice('medium-top')
 
-// the rest of your widget code 
+// the rest of your widget code
 ```
 
 Valid slice names are:
@@ -92,7 +99,7 @@ Valid slice names are:
 
 ### Getting the path instead of the actual image
 
-Sometimes you may want to get the actual path of the image for a specific posistion. 
+Sometimes you may want to get the actual path of the image for a specific posistion.
 
 ```javascript
 const nobg = importModule('no-background.js')
@@ -101,7 +108,7 @@ const widget = new ListWidget();
 const bgpath = nobg.getPathForSlice('small-top-left')
 widget.backgroundImage = Image.fromFile(bgpath)
 
-// the rest of your widget code 
+// the rest of your widget code
 ```
 
 *Like the `getSliceForWidget` method, both the `getSlice` and `getPathForSlice` also prompt for setup if the slices don't exist.*

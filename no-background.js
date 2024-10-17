@@ -412,11 +412,32 @@ const phoneSizes = {
     "small": { "w": 474, "h": 474 },
     "medium": { "w": 1014, "h": 474 },
     "large": { "w": 1014, "h": 1062 },
-    "left": 81,
-    "right": 624,
-    "top": 240,
-    "middle": 828,
-    "bottom": 1416
+    "positions": {
+        "17": {
+            "left": 82,
+            "right": 622,
+            "top": 270,
+            "middle": 858,
+            "bottom": 1446
+        },
+        "18normal": {
+            "left": 81,
+            "right": 624,
+            "top": 240,
+            "middle": 828,
+            "bottom": 1416
+        },
+        "18large": {
+            "small": { "w": 495, "h": 495 },
+            "medium": { "w": 1047, "h": 495 },
+            "large": { "w": 1047, "h": 1047 },
+            "left": 66,
+            "right": 618,
+            "top": 243,
+            "middle": 795,
+            "bottom": 1347
+        }
+    }
   },
 
   "2778": {
@@ -490,42 +511,6 @@ const phoneSizes = {
     "middle": 0,
     "bottom": 0
   },
-
-  "2208": {
-    "models": ["6+", "6s+", "7+", "8+"],
-    "small": { "w": 471, "h": 471 },
-    "medium": { "w": 1044, "h": 471 },
-    "large": { "w": 1044, "h": 1071 },
-    "left": 0,
-    "right": 0,
-    "top": 0,
-    "middle": 0,
-    "bottom": 0
-  },
-
-  "1334": {
-    "models": ["6", "6s", "7", "8"],
-    "small": { "w": 296, "h": 296 },
-    "medium": { "w": 642, "h": 296 },
-    "large": { "w": 642, "h": 648 },
-    "left": 0,
-    "right": 0,
-    "top": 0,
-    "middle": 0,
-    "bottom": 0
-  },
-
-  "1136": {
-    "models": ["5", "5s", "5c", "SE"],
-    "small": { "w": 282, "h": 282 },
-    "medium": { "w": 584, "h": 282 },
-    "large": { "w": 584, "h": 622 },
-    "left": 0,
-    "right": 0,
-    "top": 0,
-    "middle": 0,
-    "bottom": 0
-  }
 }
 //------------------------------------------------
 function cropImage(img, rect) {
