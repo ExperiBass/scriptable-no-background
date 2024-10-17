@@ -1,7 +1,12 @@
 # no-background.js (ios 18+)
 
 if youre on ios 17 the original works fine
+
 this fork drops pre-18 support to make it easier to update
+
+only 2556px tall screens supported rn, prs welcome for other screen sizings
+
+for reference, left and right are counted from the left edge, and top, middle, and bottom are counted from the top edge
 
 original readme below
 
