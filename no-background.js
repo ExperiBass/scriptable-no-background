@@ -127,6 +127,18 @@ exports.generateSlices = async function ({ caller = 'none' }) {
     return false
   }
 
+  /// hook in here
+  let homeSizes = ['small', 'large']
+  const homeSize = homeSizes[await presentAlert("Is your home screen set to small, or large?",
+    ['Small (default)', 'Large (no text)'], ALERTS_AS_SHEETS)]
+
+  /// build the original pre-18 structure now that we have the right size
+  phone = {
+    ...phone,
+    ...phone[homeSize]
+  }
+
+
   const families = ['small', 'medium', 'large']
 
   // generate crop rects for all sizes
@@ -409,34 +421,25 @@ const phoneSizes = {
 
   "2556": {
     "models": ["14 Pro", "15 Pro", "15", "16"],
-    "small": { "w": 474, "h": 474 },
-    "medium": { "w": 1014, "h": 474 },
-    "large": { "w": 1014, "h": 1062 },
-    "positions": {
-        "17": {
-            "left": 82,
-            "right": 622,
-            "top": 270,
-            "middle": 858,
-            "bottom": 1446
-        },
-        "18normal": {
-            "left": 81,
-            "right": 624,
-            "top": 240,
-            "middle": 828,
-            "bottom": 1416
-        },
-        "18large": {
-            "small": { "w": 495, "h": 495 },
-            "medium": { "w": 1047, "h": 495 },
-            "large": { "w": 1047, "h": 1047 },
-            "left": 66,
-            "right": 618,
-            "top": 243,
-            "middle": 795,
-            "bottom": 1347
-        }
+    "small": {
+        "small": { "w": 474, "h": 474 },
+        "medium": { "w": 1014, "h": 474 },
+        "large": { "w": 1014, "h": 1062 },
+        "left": 81,
+        "right": 624,
+        "top": 240,
+        "middle": 828,
+        "bottom": 1416
+    },
+    "large": {
+        "small": { "w": 495, "h": 495 },
+        "medium": { "w": 1047, "h": 495 },
+        "large": { "w": 1047, "h": 1047 },
+        "left": 66,
+        "right": 618,
+        "top": 243,
+        "middle": 795,
+        "bottom": 1347
     }
   },
 
