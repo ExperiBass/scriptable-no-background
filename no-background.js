@@ -415,7 +415,16 @@ const phoneSizes = {
       middle: 0,
       bottom: 0,
     },
-    large: {},
+    large: {
+      small: { w: 495, h: 495 },
+      medium: { w: 1047, h: 495 },
+      large: { w: 1047, h: 1047 },
+      left: 84,
+      right: 626,
+      top: 264,
+      middle: 810,
+      bottom: 1350,
+    },
   },
   2796: {
     models: ["14 Pro Max", "15 Pro Max", "15 Plus", "16 Plus"],
