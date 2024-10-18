@@ -484,7 +484,7 @@ const phoneSizes = {
   },
 
   2532: {
-    models: ["12", "12 Pro", "13", "14"],
+    models: ["12", "12 Pro", "13", "13 Pro", "14"],
     small: {
       small: { w: 474, h: 474 },
       medium: { w: 1014, h: 474 },
