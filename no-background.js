@@ -409,14 +409,14 @@ const phoneSizes = {
   2622: {
     models: ["16 Pro"],
     small: {
-      small: { w: 0, h: 0 },
-      medium: { w: 0, h: 0 },
-      large: { w: 0, h: 0 },
-      left: 0,
-      right: 0,
-      top: 0,
-      middle: 0,
-      bottom: 0,
+      small: { w: 486, h: 486 },
+      medium: { w: 1032, h: 486 },
+      large: { w: 1032, h: 1098 },
+      left: 87,
+      right: 633,
+      top: 261,
+      middle: 873,
+      bottom: 1485,
     },
     large: {
       small: { w: 495, h: 495 },
