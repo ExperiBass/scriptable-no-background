@@ -6,7 +6,7 @@
 
 Script      : no-background.js
 Author      : dev@supermamon.com
-Version     : 1.8.1
+Version     : 2.0.0
 Description :
   A module to create illusions of transparent
   backgrounds for Scriptable widgets
@@ -17,6 +17,9 @@ https://talk.automators.fm/t/widget-examples/7994/135
 
 
 Changelog   :
+v2.0.0
+- (new) ios 18 support
+- (breaking) dropped support for ios 17 and previous
 v1.8.1
 - (fix) getPathForSlice returns empty string
 v1.8.0
@@ -59,7 +62,7 @@ v1.0.1
 - Fix iamge does not exists issue
 ----------------------------------------------- */
 
-const ALERTS_AS_SHEETS = false;
+const ALERTS_AS_SHEETS = true;
 
 const USES_ICLOUD = usesiCloud();
 const fm = FileManagerAdaptive();
